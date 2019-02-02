@@ -1,0 +1,10 @@
+[package]
+name = "teamtimes"
+version = "0.1.0"
+authors = ["James Dennes <jdennes@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+chrono-tz = "0.5"
+prettytable-rs = "^0.8"
