@@ -1,6 +1,7 @@
+#[macro_use]
+extern crate prettytable;
 extern crate chrono;
 extern crate chrono_tz;
-#[macro_use] extern crate prettytable;
 
 use chrono::{DateTime, Utc};
 use chrono_tz::Tz;
