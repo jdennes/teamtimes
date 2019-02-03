@@ -4,14 +4,14 @@ extern crate chrono;
 extern crate chrono_tz;
 
 use chrono::{DateTime, Utc};
-use chrono_tz::Tz;
 use chrono_tz::Africa::Nairobi;
-use chrono_tz::Europe::Amsterdam;
 use chrono_tz::America::Toronto;
+use chrono_tz::Europe::Amsterdam;
+use chrono_tz::Tz;
 use chrono_tz::US::Eastern;
 use chrono_tz::US::Mountain;
 use chrono_tz::US::Pacific;
-use prettytable::{Table};
+use prettytable::Table;
 
 struct TeamMemberTimeZone {
     label: String,
@@ -26,14 +26,38 @@ impl TeamMemberTimeZone {
 
 fn get_timezones() -> [TeamMemberTimeZone; 8] {
     [
-        TeamMemberTimeZone {label: "Nairobi".to_string(), time_zone: Nairobi},
-        TeamMemberTimeZone {label: "Rotterdam".to_string(), time_zone: Amsterdam},
-        TeamMemberTimeZone {label: "Düsseldorf".to_string(), time_zone: Amsterdam},
-        TeamMemberTimeZone {label: "Boston".to_string(), time_zone: Eastern},
-        TeamMemberTimeZone {label: "Toronto".to_string(), time_zone: Toronto},
-        TeamMemberTimeZone {label: "Arizona".to_string(), time_zone: Mountain},
-        TeamMemberTimeZone {label: "Seattle".to_string(), time_zone: Pacific},
-        TeamMemberTimeZone {label: "California".to_string(), time_zone: Pacific}
+        TeamMemberTimeZone {
+            label: "Nairobi".to_string(),
+            time_zone: Nairobi,
+        },
+        TeamMemberTimeZone {
+            label: "Rotterdam".to_string(),
+            time_zone: Amsterdam,
+        },
+        TeamMemberTimeZone {
+            label: "Düsseldorf".to_string(),
+            time_zone: Amsterdam,
+        },
+        TeamMemberTimeZone {
+            label: "Boston".to_string(),
+            time_zone: Eastern,
+        },
+        TeamMemberTimeZone {
+            label: "Toronto".to_string(),
+            time_zone: Toronto,
+        },
+        TeamMemberTimeZone {
+            label: "Arizona".to_string(),
+            time_zone: Mountain,
+        },
+        TeamMemberTimeZone {
+            label: "Seattle".to_string(),
+            time_zone: Pacific,
+        },
+        TeamMemberTimeZone {
+            label: "California".to_string(),
+            time_zone: Pacific,
+        },
     ]
 }
 
